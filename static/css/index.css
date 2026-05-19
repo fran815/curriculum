@@ -2,8 +2,8 @@ body {
     height: 100dvh;
     margin: 0;
     /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
-    background-image: linear-gradient(to right, #1368f9 0%, #7cabfb 100%);
-    
+    /* background-image: linear-gradient(to right, #1368f9 0%, #7cabfb 100%); */
+    background-color: #1368f9;
 
     font-family: sans-serif;
 }
@@ -14,6 +14,13 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+/* PYTHON TITLE */
+.title-web p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
 }
 
 .elements {
@@ -60,10 +67,10 @@ body {
     background-image: url(/static/css/docs/ivan.jpg);
     background-size: cover;
     background-position: center;
-    width: 280px;
-    height: 95%;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
-    border: 2px solid rgb(61, 61, 251);;
+    border: 3px solid rgb(61, 61, 251);
 }
 
 .github-div {
@@ -91,7 +98,7 @@ body {
 }
 #id-name {
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
     color: rgb(61, 61, 251);
 }
@@ -99,12 +106,42 @@ body {
     font-size: 14px;
     margin-block: 3px;
     text-align: justify;
-    margin-inline: 10px;
+    margin-inline: 12px;
     /* line-height: 25px; */
+    font-style: oblique;
+    color: rgb(90, 90, 90);
 }
+
+/* ACADEMIC LOGOS */
+.academic-img-web-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.academic-img-web {
+    background-image: url(/static/css/docs/favicon-1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+.academic-img-web-udmy {
+    background-image: url(/static/css/docs/icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgb(150, 61, 251);
+}
+
+
+
 .id-data {
     margin: 0;
-    margin-block: 0;
+    margin-block: 8px;
     color: rgb(61, 61, 251);
     font-weight: bold;
 }
@@ -126,7 +163,9 @@ body {
     justify-content: center;
     width: 50%;
     height: 50px;
-    
+    /* background-color: rgb(233, 233, 233); */
+    background-color: rgb(61, 61, 251);
+    border-bottom-left-radius: 5px;
     border-right: 1px solid rgba(128, 128, 128, 0.5);
 }
 .option-button-2 {
@@ -136,12 +175,17 @@ body {
     width: 50%;
     height: 50px;
     transition: 0.5s;
+    /* background-color: rgb(233, 233, 233); */
+    background-color: rgb(61, 61, 251);
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
 }
 .whatsapp-tag {
     text-align: center;
     width: 100%;
     border-bottom-right-radius: 5px;
-    color: gray;
+    /* color: rgb(105, 105, 105); */
+    color: white;
     font-weight: bold;
     text-decoration: none;
     transition: 0.5s;
@@ -154,7 +198,8 @@ body {
     text-align: center;
     width: 100%;
     border-bottom-left-radius: 5px;
-    color: gray;
+    /* color: rgb(105, 105, 105); */
+    color: white;
     font-weight: bold;
     text-decoration: none;
     transition: 0.5s;
@@ -188,12 +233,14 @@ body {
 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border: 1px solid white;
 }
 .main-description-div {
     display: flex;
     margin: 5px;
 }
 .acerca-div-web {
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
 .acerca-div-web p {
@@ -355,7 +402,7 @@ body {
     height: 165px;
     width: 165px;
     
-    background-color: #2575fc;
+    background-color: rgb(61, 61, 251);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -548,6 +595,14 @@ body {
         width: 100%;
         height: 570px;
     }
+    .img-wallpaper {
+        width: 280px;
+        height: 280px;
+    }
+
+    .title-web {
+        display: none;
+    }
 
     #id-name {
         font-size: 22px;
@@ -559,7 +614,7 @@ body {
     #my_description {
         font-size: 15px;
         line-height: normal;
-        margin: 5px;
+        margin: 8px;
     }
 
     .descript-data-mobile {
