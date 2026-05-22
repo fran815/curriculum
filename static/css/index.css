@@ -21,6 +21,8 @@ body {
     font-weight: bold;
     font-size: 30px;
     margin-left: 5px;
+    text-align: center;
+    color: rgb(61, 61, 251);
 }
 
 .elements {
@@ -224,7 +226,7 @@ body {
     width: 60%;
 }
 .data-card {
-    width: 85%;
+    width: 650px;
     height: 85%;
     overflow-y: scroll;
     scrollbar-width: 3px;
@@ -593,11 +595,14 @@ body {
     }
     .img-card {
         width: 100%;
-        height: 570px;
+        height: 705px;
+    }
+    .img-div {
+        height: 270px;
     }
     .img-wallpaper {
-        width: 280px;
-        height: 280px;
+        width: 240px;
+        height: 240px;
     }
 
     .title-web {
@@ -614,11 +619,78 @@ body {
     #my_description {
         font-size: 15px;
         line-height: normal;
-        margin: 8px;
+        margin-inline: 12px;
     }
 
     .descript-data-mobile {
         display: block;
+    }
+
+    .descript-data-mobile-area {
+        height: 180px; 
+        width: 100%; 
+        /* background-color: red;  */
+        display: flex; 
+        text-align: center;
+        justify-content: center; 
+        align-items: center;
+    }
+    .mini-area {
+        height: 95%; 
+        width: 95%; 
+        /* background-color: green;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mini-area-1 {
+        display: flex;;
+    }
+    .mini-data {
+        display: flex;
+        flex-direction: column;
+        width: 100px; 
+        height: 60px; 
+        /* background-color: yellow; */
+        margin: 8px;
+        
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(194, 194, 194, 0.445);
+    }
+    .mini-data-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 28px;
+        /* background-color: blue; */
+    }
+    .mini-data-img img {
+        width: 20px;
+        height: 18px;
+    }
+    .mini-data-text {
+        width: 60%;
+        height: 28px;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        /* background-color: pink; */
+    }
+    .mini-data-data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28px;
+        font-size: 13px;
+        /* background-color: brown; */
     }
 
 
