@@ -404,15 +404,39 @@ body {
     height: 165px;
     width: 165px;
     
-    background-color: rgb(61, 61, 251);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 0.5px solid rgb(239, 239, 239);
+    border: 0.5px solid rgb(204, 204, 204);
     border-radius: 7px;
     transition: 1s;
 }
-.cards:hover {background-color: rgb(98, 20, 194);}
+.card-python {
+    background: #1f5cb8;
+    background: linear-gradient(159deg,rgba(31, 92, 184, 1) 15%, rgba(255, 255, 0, 1) 83%);
+}
+.card-javascript {
+    background: #e6de00;
+    background: linear-gradient(159deg,rgba(230, 222, 0, 1) 15%, rgba(255, 132, 0, 1) 83%);
+
+}
+.card-mysql {
+    background: #6924ff;
+    background: linear-gradient(159deg,rgba(105, 36, 255, 1) 15%, rgba(128, 240, 255, 1) 83%);
+}
+.card-html {
+    background: #e35300;
+    background: linear-gradient(159deg,rgba(227, 83, 0, 1) 15%, rgba(255, 211, 128, 1) 83%);
+}
+.card-css {
+    background: #0006c2;
+    background: linear-gradient(159deg,rgba(0, 6, 194, 1) 15%, rgba(51, 171, 222, 1) 83%);
+}
+.card-ux {
+    background: #c200b8;
+    background: linear-gradient(159deg,rgba(194, 0, 184, 1) 15%, rgba(94, 20, 184, 1) 83%);
+}
+
 .cards:hover .card-img {
     animation: anim 3s infinite;
 }
@@ -431,8 +455,42 @@ body {
     border-bottom-right-radius: 7px;
 
     background-color: white;
-    color: gray;
 }
+.experience-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.calendar-img-div {
+    width: 20px;
+    height: 20px;
+}
+.calendar-img-div img {
+    width: 18px;
+    height: 18px;
+}
+.aprovement-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.checkmark-img-div {
+    width: 20px;
+    height: 20px;
+}
+.checkmark-img-div img {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+
+
+
 .lang-1 {
     height: 165px;
     width: 165px;
@@ -485,7 +543,7 @@ body {
     background-color: rgba(128, 128, 128, 0);
 }
 .spanish {
-    width: 250px;
+    width: 200px;
     height: 250px;
     margin-right: 10px;
     background-color: rgba(235, 235, 235, 0.463);
@@ -496,7 +554,7 @@ body {
     border-radius: 7px;
 }
 .english {
-    width: 250px;
+    width: 200px;
     height: 250px;
     margin-left: 10px;
     background-color: rgba(235, 235, 235, 0.463);
@@ -512,15 +570,44 @@ body {
     text-align: center;
 }
 .card-lang-img-div {
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
 }
-#card-lang-img {
-    width: 230px;
-    height: 150px;
-    border-radius: 7px;
+.card-div-mx {
+    background: #009e0d;
+    background: linear-gradient(159deg,rgba(0, 158, 13, 1) 15%, rgba(118, 237, 97, 1) 83%);
+}
+.card-div-us {
+    background: #002f9e;
+    background: linear-gradient(159deg,rgba(0, 47, 158, 1) 15%, rgba(97, 134, 237, 1) 83%);
+}
+.card-lang-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#flag-img {
+    width: 90px;
+    height: 75px;
+}
+
+.language-info p {
+    margin-block: 5px;
 }
 /* BARS */
 .bar-div {
@@ -558,9 +645,111 @@ body {
     margin-left: 5px;
 }
 .project-names {
-    margin-left: 10px;
+    margin-left: 5px;
+
+}
+.project-1 {
+    
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    width: 380px;
+    height: 60px;
+    border-radius: 5px;
+    margin-block: 10px;
+}
+.project-1-div p, a {
+    margin: 5px;
+}
+.project-1-div div {
+    display: flex;
+    align-items: center;
+}
+.status-1 {
+    width: 150px;
+    text-align: center;
+    /* color: rgb(47, 163, 1); */
+    color: white;
+    background-color: rgba(111, 250, 134, 0.5);
+    border: 1px solid rgba(71, 224, 11, 0.829);
+    border-radius: 5px;
+    margin-left: 50px;
+
+    animation: luzParpadeante 2s infinite ease-in-out;
 }
 
+.project-2 {
+    
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+    width: 380px;
+    height: 60px;
+    border-radius: 5px;
+    margin-block: 5px;
+}
+.project-2-div p, a {
+    margin: 5px;
+}
+.project-2-div div {
+    display: flex;
+    align-items: center;
+}
+.status-2 {
+    width: 150px;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    background-color: rgba(158, 206, 252, 0.5);
+    border: 1px solid rgba(107, 154, 197, 0.5);
+    border-radius: 5px;
+}
+
+
+/* SECCION EMPLEO */
+.job-title {
+    font-size: 19px;
+    margin-top: 20px;
+
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+.job-div {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.job-info-div {
+    display: flex;
+    width: 310px;
+    flex-direction: column;
+    
+    margin-block: 15px;
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.job-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job-info span {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+    margin-block: 10px;
+}
+.job-info p {
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    margin-left: 5px;
+}
+#job-img {
+    width: 310px;
+    height: 180px;
+    
+}
 
 
 /* KEYFRAMES */
@@ -575,6 +764,21 @@ body {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes luzParpadeante {
+    0% {
+        background-color: #22c55e; /* Verde estándar (Base) */
+        box-shadow: 0 0 4px rgba(34, 197, 94, 0.2);
+    }
+    50% {
+        background-color: #4ade80; /* Verde más brillante e intenso */
+        box-shadow: 0 0 16px rgba(74, 222, 128, 0.7); /* Efecto de brillo/luz hacia afuera */
+    }
+    100% {
+        background-color: #22c55e; /* Vuelve al verde base */
+        box-shadow: 0 0 4px rgba(34, 197, 94, 0.2);
     }
 }
 
@@ -770,15 +974,25 @@ body {
     }
 
 
+    /* MIS PROYECTOS */
+    .project-1 {
+        width: 95%;
+    }
+    .project-2 {
+        width: 95%;
+    }
+
+
     .language-descript {
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
     .spanish {
-        margin-right: 0px;
-        margin-bottom: 10px;
+        width: 150px;
     }
     .english {
-        margin-left: 0px;
+        width: 150px;
     }
 }
